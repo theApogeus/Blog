@@ -14,9 +14,12 @@
                     <h1><a href="{% url 'home' %}">Django Blog</a></h1>
                 </div>
                 <div class="nav-right">
-                    <a href="{% url 'post_new' %}">+ New Blog Post</a>
+                    <a href="{% url 'post_new' %}">+ New Post</a>
                 </div>
             </header>
+
+            {% include 'navbar.html' %}
+
             <main>
                 <div class="container">
                     {% if user.is_authenticated %}
