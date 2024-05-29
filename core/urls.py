@@ -9,3 +9,4 @@ urlpatterns = [
     path("accounts/", include("django.contrib.auth.urls")),  # new
     path("accounts/", include("accounts.urls")),  # new
 ]
+                                                                                                                                                                          
