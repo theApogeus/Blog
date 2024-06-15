@@ -1,7 +1,29 @@
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 18px;
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;700;800&display=swap');
+
+:root {
+    --color-primary: #ee394c;
+    --color-secondary: #86b7fe;
+    --color-light: #f2f2f2;
+    --color-gray: #ced4da;
+    --color-dark: #212121;
+    --color-white: #ffffff;
+    --color-error: #e2442f;
+    --color-warning: #ffc900;
+    --color-info: #02a2b9;
+    --color-success: #1ba345;
+    --color-input: #00d1b2;
+     --border-radius: 5px;
 }
+
+body {
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+}
+
 
 header {
     border-bottom: 1px solid #999;
@@ -10,7 +32,25 @@ header {
 }
 
 header h1 a {
-    color: red;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+
+a {
+    color: var(--color-success);
     text-decoration: none;
 }
 
@@ -38,7 +78,7 @@ header h1 a {
 }
 .post-entry p {
     margin: 0;
-f   ont-weight: 400;
+    font-weight: 400;
 }
 .post-entry h2 a:hover {
     color: red;
